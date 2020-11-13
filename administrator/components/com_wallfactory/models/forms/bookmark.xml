@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<form enctype="multipart/form-data">
+    <fieldset name="details" side="left">
+        <field name="title" type="text" class="input-xxlarge input-large-text" required="true"/>
+
+        <field name="link" type="BookmarkLink" class="input-xxlarge" required="true" validate="url"/>
+
+        <field name="thumbnail" type="BookmarkThumbnail"/>
+        <field name="upload" type="file" accept=".png,.jpg,.jpeg"/>
+    </fieldset>
+
+    <fieldset name="state" side="right">
+        <field name="published" type="radio" class="switcher btn-group btn-group-yesno" default="0">
+            <option value="0">JUNPUBLISHED</option>
+            <option value="1">JPUBLISHED</option>
+        </field>
+    </fieldset>
+
+    <field name="id" type="hidden" filter="int" required="true"/>
+</form>

@@ -1,0 +1,116 @@
+div.template-media {
+  margin-top: 20px;
+}
+div.template-media + div.template-media {
+  padding-top: 20px;
+  border-top: 1px solid #eeeeee;
+}
+div.template-media a.remove-media {
+  color: #cc0000;
+}
+div.template-media div.preview {
+  background-color: #f6f6f6;
+  padding: 10px;
+  margin-top: 9px;
+}
+div.template-media div.preview.error {
+  background-color: #f2dede;
+}
+div.template-media input[type="text"].loading {
+  background: url('/media/com_wallfactory/assets/images/loader.gif') no-repeat center right 10px;
+}
+div.template-media div.progress {
+  border-radius: 0;
+  box-shadow: none;
+  transition: none;
+}
+div.post-media-video div.video-details {
+  margin-top: 10px;
+}
+div.post-media-video div.thumbnail-wrapper {
+  width: 100%;
+  min-height: 300px;
+  background-color: #000000;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+}
+div.post-media-video div.thumbnail-wrapper span.fa-play-circle {
+  text-shadow: 0 0 15px #000000;
+  color: #ffffff;
+  font-size: 60px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 60px;
+}
+div.post-media-audio div.audio-details {
+  margin-top: 10px;
+}
+div.audio-player div.audio-wrapper {
+  height: 40px;
+  position: relative;
+}
+div.audio-player div.audio-wrapper a.jp-play {
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 40px;
+  left: 0;
+  top: 0;
+  background-color: #FFC100;
+  line-height: 40px;
+  text-align: center;
+}
+div.audio-player div.audio-wrapper a.jp-play span.fa {
+  color: #3D3D3D;
+}
+div.audio-player div.audio-wrapper div.jp-volume-controls {
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 40px;
+  left: 40px;
+  top: 0;
+  background-color: #FFC100;
+  line-height: 40px;
+  text-align: center;
+}
+div.audio-player div.audio-wrapper div.jp-progress {
+  position: absolute;
+  top: 0;
+  left: 80px;
+  right: 0;
+  height: 40px;
+  background-color: #3D3D3D;
+}
+div.audio-player div.audio-wrapper div.jp-seek-bar {
+  width: 100%;
+  cursor: pointer;
+}
+div.audio-player div.audio-wrapper div.jp-play-bar {
+  height: 40px;
+  width: 100%;
+  background-color: #9D9CA1;
+}
+div.audio-player div.audio-wrapper div.jp-duration {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  line-height: 40px;
+  color: #ffffff;
+  cursor: inherit;
+  font-weight: bold;
+}
+div.audio-player div.audio-wrapper div.jp-title {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  line-height: 40px;
+  color: #ffffff;
+  cursor: inherit;
+  font-weight: bold;
+}

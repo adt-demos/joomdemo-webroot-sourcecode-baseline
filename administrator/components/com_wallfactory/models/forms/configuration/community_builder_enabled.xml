@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<form>
+    <fieldset name="community_builder" tab="integrations" side="right">
+        <fields name="integrations">
+            <fields name="community_builder">
+                <field name="avatar" type="radio" class="switcher btn-group btn-group-yesno" filter="integer"
+                       default="0">
+                    <option value="0">JDISABLED</option>
+                    <option value="1">JENABLED</option>
+                </field>
+            </fields>
+        </fields>
+    </fieldset>
+</form>

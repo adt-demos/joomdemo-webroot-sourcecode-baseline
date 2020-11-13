@@ -1,0 +1,663 @@
+div.wallfactory-view a {
+  outline: none;
+}
+div.wallfactory-view .username {
+  font-size: 14px;
+}
+div.wallfactory-view .btn-loading,
+div.wallfactory-view .btn-loading:hover,
+div.wallfactory-view .btn-loading:active,
+div.wallfactory-view .btn-loading:focus {
+  background-image: url('../images/loader.gif');
+  background-position: center center;
+  background-repeat: no-repeat;
+  font-size: 0;
+  transition: none;
+  display: inline-block;
+  overflow: hidden;
+}
+div.wallfactory-view .btn-loading > *,
+div.wallfactory-view .btn-loading:hover > *,
+div.wallfactory-view .btn-loading:active > *,
+div.wallfactory-view .btn-loading:focus > * {
+  display: none;
+}
+div.wallfactory-view img.avatar {
+  border-radius: 3px;
+  background-color: #f6f6f6;
+}
+div.wallfactory-view .dropdown-toggle:after {
+  content: normal;
+}
+div.wallfactory-view div.posts div.post + div.post {
+  margin-top: 25px;
+  padding-top: 25px;
+  border-top: 1px solid #eeeeee;
+}
+div.wallfactory-view div.posts div.post div.post-media {
+  margin: 15px 0;
+}
+div.wallfactory-view div.posts div.post div.post-media-item {
+  padding: 10px;
+  background-color: #f6f6f6;
+}
+div.wallfactory-view div.posts div.post div.post-media-item + div.post-media-item {
+  margin-top: 10px;
+}
+div.wallfactory-view div.posts div.post-user {
+  float: left;
+}
+div.wallfactory-view div.posts div.post-user img {
+  width: 42px;
+}
+div.wallfactory-view div.posts div.post-contents {
+  margin-left: 60px;
+}
+div.wallfactory-view div.posts div.post-contents span.fa-caret-right {
+  margin: 0 3px 0 5px;
+}
+div.wallfactory-view div.posts div.post-contents div.post-text {
+  margin: 10px 0 15px;
+}
+div.wallfactory-view div.posts div.post-contents p {
+  margin: 0;
+  padding: 0;
+}
+div.wallfactory-view div.posts div.post-contents p + p {
+  margin-top: 7px;
+}
+div.wallfactory-view div.posts div.post-contents img.emoticon {
+  margin: 2px;
+}
+div.wallfactory-view div.posts div.btn-group a.dropdown-toggle {
+  background: none;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 2px 8px;
+  color: #dddddd;
+}
+div.wallfactory-view div.posts div.btn-group a.dropdown-toggle:hover {
+  color: #666666;
+}
+div.wallfactory-view div.posts div.btn-group ul {
+  border-radius: 0;
+  margin-top: 0;
+  margin-right: -1px;
+  padding: 5px 0;
+}
+div.wallfactory-view div.posts div.btn-group ul li.divider {
+  margin: 5px 0;
+}
+div.wallfactory-view div.posts div.btn-group ul a {
+  font-size: 12px;
+}
+div.wallfactory-view div.posts div.btn-group ul a:hover {
+  background-color: #999999;
+  background-image: none;
+}
+div.wallfactory-view div.posts div.btn-group.open a.dropdown-toggle {
+  background-color: #999999;
+  color: #ffffff;
+}
+div.wallfactory-view div.posts div.post-actions {
+  overflow: hidden;
+}
+div.wallfactory-view div.posts div.post-actions a {
+  float: left;
+  color: #999999;
+}
+div.wallfactory-view div.posts div.post-actions a + a {
+  margin-left: 10px;
+}
+div.wallfactory-view div.posts div.post-actions span.badge {
+  float: left;
+  padding: 3px 10px;
+  line-height: normal;
+}
+div.wallfactory-view div.posts div.bookmarks {
+  margin-top: 10px;
+}
+div.wallfactory-view div.comments {
+  margin-top: 25px;
+  font-size: 12px;
+}
+div.wallfactory-view div.comments div.comment + div.comment {
+  margin-top: 20px;
+}
+div.wallfactory-view div.comments div.comment div.comment-user {
+  float: left;
+}
+div.wallfactory-view div.comments div.comment div.comment-user img {
+  width: 30px;
+}
+div.wallfactory-view div.comments div.comment div.comment-contents {
+  margin-left: 40px;
+}
+div.wallfactory-view div.comments div.comment div.comment-contents div.comment-text {
+  margin-top: 7px;
+}
+div.wallfactory-view div.comments div.comment .username {
+  font-size: 13px;
+}
+div.wallfactory-view div.comments div.more-comments {
+  margin-top: 20px;
+}
+div.wallfactory-view div.submit-comment {
+  margin-bottom: 20px;
+}
+div.wallfactory-view div.submit-comment div.user {
+  float: left;
+}
+div.wallfactory-view div.submit-comment div.user img {
+  width: 30px;
+}
+div.wallfactory-view div.submit-comment div.contents {
+  margin-left: 40px;
+}
+div.wallfactory-view div.submit-comment textarea {
+  font-family: 'Roboto', sans-serif;
+  border: 1px solid #dddddd;
+  box-shadow: none;
+  border-radius: 0;
+  resize: none;
+  width: 100%;
+  max-height: 200px;
+  height: auto;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 5px 8px;
+  max-width: none;
+}
+div.wallfactory-view div.submit-comment textarea:focus:invalid:focus {
+  border-color: #dddddd;
+  box-shadow: none;
+  color: inherit;
+}
+div.wallfactory-view div.submit-comment input[type="text"],
+div.wallfactory-view div.submit-comment input[type="email"] {
+  font-family: 'Roboto', sans-serif;
+  border: 1px solid #dddddd;
+  box-shadow: none;
+  border-radius: 0;
+  width: 50%;
+  min-width: 200px;
+  height: auto;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 5px 8px;
+}
+div.wallfactory-view div.submit-comment input[type="text"]:focus:invalid:focus,
+div.wallfactory-view div.submit-comment input[type="email"]:focus:invalid:focus {
+  border-color: #dddddd;
+  box-shadow: none;
+  color: inherit;
+}
+div.wallfactory-view div.submit-comment form {
+  margin: 0;
+}
+div.wallfactory-view div.submit-comment div.comment-actions {
+  margin-top: 7px;
+}
+div.wallfactory-view div.submit-post {
+  margin-bottom: 40px;
+  font-family: 'Roboto', sans-serif;
+}
+div.wallfactory-view div.submit-post div.submit-post-contents {
+  margin-left: 78px;
+}
+div.wallfactory-view div.submit-post div.submit-post-user {
+  float: left;
+}
+div.wallfactory-view div.submit-post div.submit-post-user img {
+  width: 58px;
+}
+div.wallfactory-view div.submit-post input[type="text"],
+div.wallfactory-view div.submit-post input[type="email"],
+div.wallfactory-view div.submit-post textarea {
+  font-family: 'Roboto', sans-serif;
+  border: 1px solid #dddddd;
+  box-shadow: none;
+  border-radius: 0;
+  resize: none;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  margin: 0;
+  max-width: none;
+}
+div.wallfactory-view div.submit-post textarea {
+  max-height: 100px;
+}
+div.wallfactory-view div.submit-post textarea#post_content {
+  max-height: 250px;
+  font-size: 14px;
+  padding: 10px;
+}
+div.wallfactory-view div.submit-post div.control-group {
+  margin: 0;
+}
+div.wallfactory-view div.submit-post div.submit-post-actions {
+  margin-top: 10px;
+  overflow: hidden;
+}
+div.wallfactory-view div.submit-post div.submit-post-actions a,
+div.wallfactory-view div.submit-post div.submit-post-actions button {
+  float: left;
+}
+div.wallfactory-view div.submit-post div.submit-post-actions a + a,
+div.wallfactory-view div.submit-post div.submit-post-actions button + a,
+div.wallfactory-view div.submit-post div.submit-post-actions a + button,
+div.wallfactory-view div.submit-post div.submit-post-actions button + button {
+  margin-left: 7px;
+}
+div.wallfactory-view div.submit-post div.submit-post-actions div.control-group {
+  margin: 3px 0 10px;
+}
+div.wallfactory-view div.submit-post div.submit-post-buttons {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #eeeeee;
+  overflow: hidden;
+  border: 1px solid #dddddd;
+  border-top: none;
+  box-shadow: 0 5px 15px -16px #000000 inset;
+}
+div.wallfactory-view div.submit-post div.submit-post-buttons button {
+  float: left;
+  display: block;
+  padding: 8px 10px;
+  font-size: 15px;
+  color: #666666;
+  line-height: normal;
+  position: relative;
+  background: transparent;
+  border: none;
+}
+div.wallfactory-view div.submit-post div.submit-post-buttons button span.label,
+div.wallfactory-view div.submit-post div.submit-post-buttons button span.badge {
+  position: absolute;
+  top: -5px;
+  right: 0;
+  font-weight: normal;
+}
+div.wallfactory-view div.submit-post div.submit-post-buttons button:hover {
+  background-color: #dddddd;
+}
+div.wallfactory-view div.submit-post div.submit-post-media div.template-media div.media-title {
+  margin: 0 0 5px 0;
+  line-height: normal;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: bold;
+}
+div.wallfactory-view div.submit-post div.submit-post-media div.template-media label div.media-label {
+  margin-bottom: 3px;
+}
+div.wallfactory-view div.submit-post div.submit-post-media div.template-media div.progress {
+  margin: 10px 0 0;
+  height: 10px;
+}
+div.wallfactory-view div.submit-post div.emoji-wrapper {
+  position: relative;
+}
+div.wallfactory-view div.submit-post div.emoji-wrapper div.emoji-top {
+  border: 1px solid #dddddd;
+  height: 10px;
+  border-bottom: 0;
+}
+div.wallfactory-view div.submit-post div.emoji-wrapper div.emoji-bottom {
+  border: 1px solid #dddddd;
+  height: 10px;
+  border-top: 0;
+}
+div.wallfactory-view div.submit-post div.emoji-wrapper div.emoji-wysiwyg-editor {
+  font-family: 'Roboto', sans-serif;
+  border: 1px solid #dddddd;
+  box-shadow: none;
+  border-radius: 0;
+  resize: none;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  margin: 0;
+  max-height: 250px;
+  font-size: 14px;
+  padding: 0 55px 0 10px;
+  min-height: 40px;
+  border-top: 0;
+  border-bottom: 0;
+}
+div.wallfactory-view div.submit-post div.emoji-wrapper .emoji-wysiwyg-editor img {
+  width: auto;
+  height: auto;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0 1px 1px;
+}
+div.wallfactory-view div.submit-post div.emoji-wrapper a.emoji-button {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+}
+div.wallfactory-view div.submit-post div.webui-popover h3.webui-popover-title {
+  background-color: #f6f6f6;
+}
+div.wallfactory-view div.submit-post div.webui-popover div.webui-popover-content {
+  padding: 5px 5px 5px 10px;
+  width: 200px;
+  max-height: 200px;
+}
+div.wallfactory-view div.submit-post div.webui-popover div.webui-popover-content a {
+  padding: 5px 5px 5px 0;
+  display: inline-block;
+}
+div.wallfactory-view.view-subscriptions table img {
+  width: 42px;
+}
+div.wallfactory-view.view-subscriptions table td {
+  line-height: normal;
+}
+div.wallfactory-view.view-subscriptions table td.avatar {
+  width: 42px;
+  text-align: center;
+}
+div.wallfactory-view.view-subscriptions table td.status {
+  width: 100px;
+  text-align: center;
+}
+div.wallfactory-view.view-subscriptions table td.notification {
+  width: 40px;
+  text-align: center;
+}
+div.wallfactory-view.view-subscribers table img {
+  width: 42px;
+}
+div.wallfactory-view.view-subscribers table td {
+  line-height: normal;
+}
+div.wallfactory-view.view-subscribers table td:first-child {
+  width: 42px;
+}
+div.wallfactory-view.view-profile div#user label.control-label {
+  font-weight: bold;
+  font-size: 15px;
+}
+div.wallfactory-view.view-profile div#user div.control-group + div.control-group {
+  margin-top: 20px;
+}
+div.wallfactory-view.view-profile div#user div.profile-actions {
+  margin-top: 30px;
+}
+div.wallfactory-view.view-profile div#user div.profile-actions a span.fa {
+  margin-right: 3px;
+}
+div.wallfactory-view.view-profile div#user div.update-avatar-notice {
+  margin-top: 15px;
+}
+div.wallfactory-view.view-profile div#user img {
+  max-width: 120px;
+  max-height: 120px;
+}
+div.wallfactory-view.view-profile div#user div.avatar-wrapper {
+  position: relative;
+  width: 120px;
+  margin: 0 auto;
+}
+div.wallfactory-view.view-profile div#user div.avatar-wrapper a.upload-link {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-color: rgba(100, 100, 100, 0.7);
+  border-radius: 3px;
+  display: none;
+}
+div.wallfactory-view.view-profile div#user div.avatar-wrapper a.upload-link span.fa {
+  color: #ffffff;
+  font-size: 50px;
+  line-height: 120px;
+}
+div.wallfactory-view.view-profile div#user div.avatar-wrapper:hover:not(.loading) a.upload-link {
+  display: block;
+}
+div.wallfactory-view.view-profile div#user div.avatar-wrapper div.progress-bar-wrapper {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-color: rgba(100, 100, 100, 0.7);
+  border-radius: 3px;
+  display: none;
+}
+div.wallfactory-view.view-profile div#user div.avatar-wrapper div.progress-bar-wrapper div.progress {
+  height: 10px;
+  border-radius: 0;
+  margin: 60px 10px 0 10px;
+}
+div.wallfactory-view.view-profile div#subscriptions img {
+  width: 42px;
+}
+div.wallfactory-view.view-profile div#subscriptions td.avatar {
+  width: 42px;
+}
+div.wallfactory-view.view-profile div#subscriptions div.subscriptions-actions {
+  overflow: hidden;
+  margin: 10px 0;
+}
+div.wallfactory-view.view-profileupdate div.control-label label {
+  font-weight: bold;
+  font-size: 15px;
+}
+div.wallfactory-view.view-profileupdate span.star {
+  color: #ff0000;
+}
+div.wallfactory-view.view-profileupdate textarea {
+  resize: none;
+  width: 80%;
+  max-height: 200px;
+}
+div.wallfactory-view.view-notifications div.actions {
+  margin-top: 20px;
+}
+div.wallfactory-view div.template-media {
+  margin-top: 20px;
+}
+div.wallfactory-view div.template-media + div.template-media {
+  padding-top: 20px;
+  border-top: 1px solid #eeeeee;
+}
+div.wallfactory-view div.template-media a.remove-media {
+  color: #cc0000;
+}
+div.wallfactory-view div.template-media div.preview {
+  background-color: #f6f6f6;
+  padding: 10px;
+  margin-top: 9px;
+}
+div.wallfactory-view div.template-media div.preview.error {
+  background-color: #f2dede;
+}
+div.wallfactory-view div.template-media input[type="text"].loading {
+  background: url('/media/com_wallfactory/assets/images/loader.gif') no-repeat center right 10px;
+}
+div.wallfactory-view div.template-media div.progress {
+  border-radius: 0;
+  box-shadow: none;
+  transition: none;
+}
+div.wallfactory-view div.post-media-video div.video-details {
+  margin-top: 10px;
+}
+div.wallfactory-view div.post-media-video div.thumbnail-wrapper {
+  width: 100%;
+  min-height: 300px;
+  background-color: #000000;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+}
+div.wallfactory-view div.post-media-video div.thumbnail-wrapper span.fa-play-circle {
+  text-shadow: 0 0 15px #000000;
+  color: #ffffff;
+  font-size: 60px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 60px;
+}
+div.wallfactory-view div.post-media-audio div.audio-details {
+  margin-top: 10px;
+}
+div.wallfactory-view div.audio-player div.audio-wrapper {
+  height: 40px;
+  position: relative;
+}
+div.wallfactory-view div.audio-player div.audio-wrapper a.jp-play {
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 40px;
+  left: 0;
+  top: 0;
+  background-color: #FFC100;
+  line-height: 40px;
+  text-align: center;
+}
+div.wallfactory-view div.audio-player div.audio-wrapper a.jp-play span.fa {
+  color: #3D3D3D;
+}
+div.wallfactory-view div.audio-player div.audio-wrapper div.jp-volume-controls {
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 40px;
+  left: 40px;
+  top: 0;
+  background-color: #FFC100;
+  line-height: 40px;
+  text-align: center;
+}
+div.wallfactory-view div.audio-player div.audio-wrapper div.jp-volume-controls button.jp-mute {
+  border: 0;
+  background: transparent;
+}
+div.wallfactory-view div.audio-player div.audio-wrapper div.jp-progress {
+  position: absolute;
+  top: 0;
+  left: 80px;
+  right: 0;
+  height: 40px;
+  background-color: #3D3D3D;
+}
+div.wallfactory-view div.audio-player div.audio-wrapper div.jp-seek-bar {
+  width: 100%;
+  cursor: pointer;
+}
+div.wallfactory-view div.audio-player div.audio-wrapper div.jp-play-bar {
+  height: 40px;
+  width: 100%;
+  background-color: #9D9CA1;
+}
+div.wallfactory-view div.audio-player div.audio-wrapper div.jp-duration {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  line-height: 40px;
+  color: #ffffff;
+  cursor: inherit;
+  font-weight: bold;
+}
+div.wallfactory-view div.audio-player div.audio-wrapper div.jp-title {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  line-height: 40px;
+  color: #ffffff;
+  cursor: inherit;
+  font-weight: bold;
+}
+div.modal.report-modal {
+  left: 0;
+  margin: 0 auto;
+  right: 0;
+  width: 500px;
+}
+div.modal.report-modal form {
+  margin: 0;
+  padding: 0;
+}
+div.modal.report-modal div.modal-body {
+  box-sizing: border-box;
+  padding: 9px 15px;
+  width: 100%;
+  min-height: 100px;
+}
+div.modal.report-modal div.modal-body textarea {
+  font-family: 'Roboto', sans-serif;
+  border: 1px solid #dddddd;
+  box-shadow: none;
+  border-radius: 0;
+  resize: none;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 12px;
+  padding: 6px 8px;
+  max-height: 350px;
+}
+div.modal.report-modal div.modal-footer .btn-primary {
+  min-width: 150px;
+}
+div.modal.likes-modal div.modal-body {
+  box-sizing: border-box;
+  padding: 20px;
+  width: 100%;
+  min-height: 100px;
+  overflow: auto;
+}
+div.modal.likes-modal div.modal-body div.list {
+  display: grid;
+  grid-gap: 15px;
+}
+div.modal.likes-modal div.modal-body div.list div.item {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  grid-gap: 10px;
+}
+div.modal.likes-modal div.modal-body div.list div.item + div.item {
+  border-top: 1px solid #f6f6f6;
+  padding-top: 15px;
+}
+div.modal.likes-modal div.modal-body div.user img {
+  width: 40px;
+}
+div.modal.likes-modal div.modal-body table td {
+  border-top: none;
+  border-bottom: 1px solid #f6f6f6;
+  line-height: normal;
+}
+div.modal.likes-modal div.modal-body table td:first-child {
+  border: none;
+  width: 40px;
+  padding-right: 16px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+div.modal.likes-modal div.modal-body table td:nth-child(2) {
+  padding-left: 0;
+  padding-top: 10px;
+}
+div.modal.likes-modal div.modal-footer .btn-primary {
+  min-width: 150px;
+}

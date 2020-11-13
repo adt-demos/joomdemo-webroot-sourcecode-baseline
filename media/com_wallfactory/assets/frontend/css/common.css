@@ -1,0 +1,31 @@
+a {
+  outline: none;
+}
+.username {
+  font-size: 14px;
+}
+.btn-loading,
+.btn-loading:hover,
+.btn-loading:active,
+.btn-loading:focus {
+  background-image: url('../images/loader.gif');
+  background-position: center center;
+  background-repeat: no-repeat;
+  font-size: 0;
+  transition: none;
+  display: inline-block;
+  overflow: hidden;
+}
+.btn-loading > *,
+.btn-loading:hover > *,
+.btn-loading:active > *,
+.btn-loading:focus > * {
+  display: none;
+}
+img.avatar {
+  border-radius: 3px;
+  background-color: #f6f6f6;
+}
+.dropdown-toggle:after {
+  content: normal;
+}

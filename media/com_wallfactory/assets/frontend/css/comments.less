@@ -1,0 +1,34 @@
+div.comments {
+    margin-top: 25px;
+    font-size: 12px;
+
+    div.comment {
+        + div.comment {
+            margin-top: 20px;
+        }
+
+        div.comment-user {
+            float: left;
+
+            img {
+                width: 30px;
+            }
+        }
+
+        div.comment-contents {
+            margin-left: 40px;
+
+            div.comment-text {
+                margin-top: 7px;
+            }
+        }
+
+        .username {
+            font-size: 13px;
+        }
+    }
+
+    div.more-comments {
+        margin-top: 20px;
+    }
+}

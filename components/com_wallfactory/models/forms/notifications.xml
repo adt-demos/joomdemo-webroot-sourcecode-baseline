@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<form>
+    <fieldset name="details">
+    </fieldset>
+
+    <field name="user_id" type="hidden" filter="int" required="true" validate="logged"/>
+</form>

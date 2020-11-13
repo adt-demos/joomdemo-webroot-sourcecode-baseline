@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<form>
+    <fieldset name="details" side="left">
+        <field name="name" type="text" required="true"/>
+
+        <field name="description" type="textarea" rows="3"/>
+
+        <field name="avatar_source" type="AvatarSource" default="none">
+            <option value="none">COM_WALLFACTORY_PROFILE_FORM_FIELD_AVATAR_SOURCE_OPTION_NONE</option>
+            <option value="thumbnail">COM_WALLFACTORY_PROFILE_FORM_FIELD_AVATAR_SOURCE_OPTION_MY_AVATAR</option>
+        </field>
+    </fieldset>
+
+    <field name="user_id" type="hidden" filter="int" required="true"/>
+</form>

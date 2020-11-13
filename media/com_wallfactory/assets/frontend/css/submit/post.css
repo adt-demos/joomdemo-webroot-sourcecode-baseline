@@ -1,0 +1,153 @@
+div.submit-post {
+  margin-bottom: 40px;
+  font-family: 'Roboto', sans-serif;
+}
+div.submit-post div.submit-post-contents {
+  margin-left: 78px;
+}
+div.submit-post div.submit-post-user {
+  float: left;
+}
+div.submit-post div.submit-post-user img {
+  width: 58px;
+}
+div.submit-post input[type="text"],
+div.submit-post input[type="email"],
+div.submit-post textarea {
+  font-family: 'Roboto', sans-serif;
+  border: 1px solid #dddddd;
+  box-shadow: none;
+  border-radius: 0;
+  resize: none;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  margin: 0;
+  max-width: none;
+}
+div.submit-post textarea {
+  max-height: 100px;
+}
+div.submit-post textarea#post_content {
+  max-height: 250px;
+  font-size: 14px;
+  padding: 10px;
+}
+div.submit-post div.control-group {
+  margin: 0;
+}
+div.submit-post div.submit-post-actions {
+  margin-top: 10px;
+  overflow: hidden;
+}
+div.submit-post div.submit-post-actions a,
+div.submit-post div.submit-post-actions button {
+  float: left;
+}
+div.submit-post div.submit-post-actions a + a,
+div.submit-post div.submit-post-actions button + a,
+div.submit-post div.submit-post-actions a + button,
+div.submit-post div.submit-post-actions button + button {
+  margin-left: 7px;
+}
+div.submit-post div.submit-post-actions div.control-group {
+  margin: 3px 0 10px;
+}
+div.submit-post div.submit-post-buttons {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #eeeeee;
+  overflow: hidden;
+  border: 1px solid #dddddd;
+  border-top: none;
+  box-shadow: 0 5px 15px -16px #000000 inset;
+}
+div.submit-post div.submit-post-buttons button {
+  float: left;
+  display: block;
+  padding: 8px 10px;
+  font-size: 15px;
+  color: #666666;
+  line-height: normal;
+  position: relative;
+  background: transparent;
+  border: none;
+}
+div.submit-post div.submit-post-buttons button span.label,
+div.submit-post div.submit-post-buttons button span.badge {
+  position: absolute;
+  top: -5px;
+  right: 0;
+  font-weight: normal;
+}
+div.submit-post div.submit-post-buttons button:hover {
+  background-color: #dddddd;
+}
+div.submit-post div.submit-post-media div.template-media div.media-title {
+  margin: 0 0 5px 0;
+  line-height: normal;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: bold;
+}
+div.submit-post div.submit-post-media div.template-media label div.media-label {
+  margin-bottom: 3px;
+}
+div.submit-post div.submit-post-media div.template-media div.progress {
+  margin: 10px 0 0;
+  height: 10px;
+}
+div.submit-post div.emoji-wrapper {
+  position: relative;
+}
+div.submit-post div.emoji-wrapper div.emoji-top {
+  border: 1px solid #dddddd;
+  height: 10px;
+  border-bottom: 0;
+}
+div.submit-post div.emoji-wrapper div.emoji-bottom {
+  border: 1px solid #dddddd;
+  height: 10px;
+  border-top: 0;
+}
+div.submit-post div.emoji-wrapper div.emoji-wysiwyg-editor {
+  font-family: 'Roboto', sans-serif;
+  border: 1px solid #dddddd;
+  box-shadow: none;
+  border-radius: 0;
+  resize: none;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  margin: 0;
+  max-height: 250px;
+  font-size: 14px;
+  padding: 0 55px 0 10px;
+  min-height: 40px;
+  border-top: 0;
+  border-bottom: 0;
+}
+div.submit-post div.emoji-wrapper .emoji-wysiwyg-editor img {
+  width: auto;
+  height: auto;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0 1px 1px;
+}
+div.submit-post div.emoji-wrapper a.emoji-button {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+}
+div.submit-post div.webui-popover h3.webui-popover-title {
+  background-color: #f6f6f6;
+}
+div.submit-post div.webui-popover div.webui-popover-content {
+  padding: 5px 5px 5px 10px;
+  width: 200px;
+  max-height: 200px;
+}
+div.submit-post div.webui-popover div.webui-popover-content a {
+  padding: 5px 5px 5px 0;
+  display: inline-block;
+}

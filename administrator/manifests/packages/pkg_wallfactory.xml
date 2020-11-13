@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="package" version="3.5" method="upgrade">
+  <name>Wall Factory</name>
+  <packagename>wallfactory</packagename>
+  <description>WallFactory Installer</description>
+  <files folder="packages">
+    <file type="component" id="com_wallfactory">component/com_wallfactory.zip</file>
+    <file type="module" id="mod_wallfactory_search" client="site">modules/site/mod_wallfactory_search.zip</file>
+  </files>
+  <version>4.1.8</version>
+  <author>thePHPfactory</author>
+  <copyright>SKEPSIS Consult SRL</copyright>
+  <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+  <authorEmail>contact@thephpfactory.com</authorEmail>
+  <authorUrl>http://www.thephpfactory.com</authorUrl>
+  <url>http://www.thephpfactory.com</url>
+  <creationDate>December 2010</creationDate>
+  <updateservers>
+    <server type="collection" name="The PHP Factory Extensions Update">http://thephpfactory.com/versions/update-c.xml</server>
+  </updateservers>
+</extension>

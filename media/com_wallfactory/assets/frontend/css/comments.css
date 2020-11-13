@@ -1,0 +1,25 @@
+div.comments {
+  margin-top: 25px;
+  font-size: 12px;
+}
+div.comments div.comment + div.comment {
+  margin-top: 20px;
+}
+div.comments div.comment div.comment-user {
+  float: left;
+}
+div.comments div.comment div.comment-user img {
+  width: 30px;
+}
+div.comments div.comment div.comment-contents {
+  margin-left: 40px;
+}
+div.comments div.comment div.comment-contents div.comment-text {
+  margin-top: 7px;
+}
+div.comments div.comment .username {
+  font-size: 13px;
+}
+div.comments div.more-comments {
+  margin-top: 20px;
+}

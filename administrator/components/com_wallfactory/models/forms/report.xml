@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<form>
+    <fieldset name="reported" side="left">
+        <field name="resource" type="ReportResource" hiddenLabel="true"/>
+    </fieldset>
+
+    <fieldset name="report" side="left">
+        <field name="comment" type="textarea" rows="10" hiddenLabel="true"/>
+    </fieldset>
+
+    <fieldset name="state" side="right">
+        <field name="resolved" type="radio" class="switcher btn-group btn-group-yesno" default="0">
+            <option value="1">Resolved</option>
+            <option value="0">Unresolved</option>
+        </field>
+    </fieldset>
+
+    <fieldset name="actions" side="right">
+        <fields name="actions">
+            <field name="delete" type="checkboxes" hiddenLabel="true">
+                <option value="1">Delete reported resource</option>
+            </field>
+        </fields>
+    </fieldset>
+
+    <field name="id" type="hidden" filter="int" required="true"/>
+</form>

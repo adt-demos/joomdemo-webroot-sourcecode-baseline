@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<form>
+    <fieldset name="details" side="left">
+        <field name="author_name" type="text" hiddenLabel="true" required="true" generateHint="true"/>
+        <field name="author_email" type="email" hiddenLabel="true" generateHint="true" required="true"/>
+
+        <field name="content" type="textarea" required="true" rows="1" hiddenLabel="true" generateHint="true"/>
+        <field name="post_id" type="hidden" filter="int" required="true"/>
+    </fieldset>
+
+    <field name="user_id" type="hidden" filter="int" required="true"/>
+    <field name="captcha" type="captcha" validate="captcha" hiddenLabel="true"/>
+</form>

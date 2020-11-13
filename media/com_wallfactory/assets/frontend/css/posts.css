@@ -1,0 +1,89 @@
+div.posts div.post + div.post {
+  margin-top: 25px;
+  padding-top: 25px;
+  border-top: 1px solid #eeeeee;
+}
+div.posts div.post div.post-media {
+  margin: 15px 0;
+}
+div.posts div.post div.post-media-item {
+  padding: 10px;
+  background-color: #f6f6f6;
+}
+div.posts div.post div.post-media-item + div.post-media-item {
+  margin-top: 10px;
+}
+div.posts div.post-user {
+  float: left;
+}
+div.posts div.post-user img {
+  width: 42px;
+}
+div.posts div.post-contents {
+  margin-left: 60px;
+}
+div.posts div.post-contents span.fa-caret-right {
+  margin: 0 3px 0 5px;
+}
+div.posts div.post-contents div.post-text {
+  margin: 10px 0 15px;
+}
+div.posts div.post-contents p {
+  margin: 0;
+  padding: 0;
+}
+div.posts div.post-contents p + p {
+  margin-top: 7px;
+}
+div.posts div.post-contents img.emoticon {
+  margin: 2px;
+}
+div.posts div.btn-group a.dropdown-toggle {
+  background: none;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 2px 8px;
+  color: #dddddd;
+}
+div.posts div.btn-group a.dropdown-toggle:hover {
+  color: #666666;
+}
+div.posts div.btn-group ul {
+  border-radius: 0;
+  margin-top: 0;
+  margin-right: -1px;
+  padding: 5px 0;
+}
+div.posts div.btn-group ul li.divider {
+  margin: 5px 0;
+}
+div.posts div.btn-group ul a {
+  font-size: 12px;
+}
+div.posts div.btn-group ul a:hover {
+  background-color: #999999;
+  background-image: none;
+}
+div.posts div.btn-group.open a.dropdown-toggle {
+  background-color: #999999;
+  color: #ffffff;
+}
+div.posts div.post-actions {
+  overflow: hidden;
+}
+div.posts div.post-actions a {
+  float: left;
+  color: #999999;
+}
+div.posts div.post-actions a + a {
+  margin-left: 10px;
+}
+div.posts div.post-actions span.badge {
+  float: left;
+  padding: 3px 10px;
+  line-height: normal;
+}
+div.posts div.bookmarks {
+  margin-top: 10px;
+}

@@ -1,0 +1,14 @@
+DROP TABLE IF EXISTS `#__com_wallfactory_bookmarks`;
+DROP TABLE IF EXISTS `#__com_wallfactory_comments`;
+DROP TABLE IF EXISTS `#__com_wallfactory_likes`;
+DROP TABLE IF EXISTS `#__com_wallfactory_media`;
+DROP TABLE IF EXISTS `#__com_wallfactory_media_audio`;
+DROP TABLE IF EXISTS `#__com_wallfactory_media_files`;
+DROP TABLE IF EXISTS `#__com_wallfactory_media_links`;
+DROP TABLE IF EXISTS `#__com_wallfactory_media_photos`;
+DROP TABLE IF EXISTS `#__com_wallfactory_media_videos`;
+DROP TABLE IF EXISTS `#__com_wallfactory_notifications`;
+DROP TABLE IF EXISTS `#__com_wallfactory_posts`;
+DROP TABLE IF EXISTS `#__com_wallfactory_profiles`;
+DROP TABLE IF EXISTS `#__com_wallfactory_reports`;
+DROP TABLE IF EXISTS `#__com_wallfactory_subscriptions`;

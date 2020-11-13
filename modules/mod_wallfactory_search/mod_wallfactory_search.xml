@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.5" client="site" method="upgrade">
+  <name>mod_wallfactory_search</name>
+  <files>
+    <filename module="mod_wallfactory_search">mod_wallfactory_search.php</filename>
+    <filename>index.html</filename>
+  </files>
+  <languages>
+    <language tag="en-GB">en-GB.mod_wallfactory_search.ini</language>
+    <language tag="en-GB">en-GB.mod_wallfactory_search.sys.ini</language>
+  </languages>
+  <version>4.1.8</version>
+  <author>thePHPfactory</author>
+  <copyright>SKEPSIS Consult SRL</copyright>
+  <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+  <authorEmail>contact@thephpfactory.com</authorEmail>
+  <authorUrl>http://www.thephpfactory.com</authorUrl>
+  <url>http://www.thephpfactory.com</url>
+  <creationDate>December 2010</creationDate>
+  <updateservers>
+    <server type="collection" name="The PHP Factory Extensions Update">http://thephpfactory.com/versions/update-c.xml</server>
+  </updateservers>
+</extension>

@@ -1,0 +1,56 @@
+div.submit-comment {
+  margin-bottom: 20px;
+}
+div.submit-comment div.user {
+  float: left;
+}
+div.submit-comment div.user img {
+  width: 30px;
+}
+div.submit-comment div.contents {
+  margin-left: 40px;
+}
+div.submit-comment textarea {
+  font-family: 'Roboto', sans-serif;
+  border: 1px solid #dddddd;
+  box-shadow: none;
+  border-radius: 0;
+  resize: none;
+  width: 100%;
+  max-height: 200px;
+  height: auto;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 5px 8px;
+  max-width: none;
+}
+div.submit-comment textarea:focus:invalid:focus {
+  border-color: #dddddd;
+  box-shadow: none;
+  color: inherit;
+}
+div.submit-comment input[type="text"],
+div.submit-comment input[type="email"] {
+  font-family: 'Roboto', sans-serif;
+  border: 1px solid #dddddd;
+  box-shadow: none;
+  border-radius: 0;
+  width: 50%;
+  min-width: 200px;
+  height: auto;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 5px 8px;
+}
+div.submit-comment input[type="text"]:focus:invalid:focus,
+div.submit-comment input[type="email"]:focus:invalid:focus {
+  border-color: #dddddd;
+  box-shadow: none;
+  color: inherit;
+}
+div.submit-comment form {
+  margin: 0;
+}
+div.submit-comment div.comment-actions {
+  margin-top: 7px;
+}

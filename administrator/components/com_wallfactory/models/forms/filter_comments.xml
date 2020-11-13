@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<form>
+    <fields name="filter">
+        <field name="search" type="text" hint="JSEARCH_FILTER"/>
+
+        <field name="published" type="list" onchange="this.form.submit();">
+            <option value="">JOPTION_SELECT_PUBLISHED</option>
+            <option value="1">JPUBLISHED</option>
+            <option value="0">JUNPUBLISHED</option>
+        </field>
+
+        <field name="post_id" type="PostList" onchange="this.form.submit();">
+            <option value="">- Select Post -</option>
+        </field>
+
+        <field name="user_id" type="UserList" onchange="this.form.submit();">
+            <option value="">- Select User -</option>
+        </field>
+    </fields>
+
+    <fields name="list">
+        <field name="fullordering" type="list" onchange="this.form.submit();">
+            <option value="">JGLOBAL_SORT_BY</option>
+        </field>
+
+        <field name="limit" type="limitbox" class="input-mini" onchange="this.form.submit();"/>
+    </fields>
+</form>

@@ -1,0 +1,18 @@
+.view-subscriptions table img {
+  width: 42px;
+}
+.view-subscriptions table td {
+  line-height: normal;
+}
+.view-subscriptions table td.avatar {
+  width: 42px;
+  text-align: center;
+}
+.view-subscriptions table td.status {
+  width: 100px;
+  text-align: center;
+}
+.view-subscriptions table td.notification {
+  width: 40px;
+  text-align: center;
+}

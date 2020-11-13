@@ -1,0 +1,52 @@
+<?php
+
+/**
+-------------------------------------------------------------------------
+wallfactory - Wall Factory 4.1.8
+-------------------------------------------------------------------------
+ * @author thePHPfactory
+ * @copyright Copyright (C) 2011 SKEPSIS Consult SRL. All Rights Reserved.
+ * @license - http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+ * Websites: http://www.thePHPfactory.com
+ * Technical Support: Forum - http://www.thePHPfactory.com/forum/
+-------------------------------------------------------------------------
+*/
+
+namespace GuzzleHttp\Exception;
+
+defined('_JEXEC') or die;
+
+use Psr\Http\Message\RequestInterface;
+
+/**
+ * Exception thrown when a connection cannot be established.
+ *
+ * Note that no response is present for a ConnectException
+ */
+class ConnectException extends RequestException
+{
+    public function __construct(
+        $message,
+        RequestInterface $request,
+        \Exception $previous = null,
+        array $handlerContext = []
+    ) {
+        parent::__construct($message, $request, null, $previous, $handlerContext);
+    }
+
+    /**
+     * @return null
+     */
+    public function getResponse()
+    {
+        return null;
+    }
+
+    /**
+     * @return bool
+     */
+    public function hasResponse()
+    {
+        return false;
+    }
+}

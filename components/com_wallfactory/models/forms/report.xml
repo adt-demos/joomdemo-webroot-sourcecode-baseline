@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<form>
+    <fieldset name="details" side="left">
+        <field name="comment" type="textarea" required="true" rows="3" generateHint="true"/>
+
+        <field name="resource_id" type="hidden" filter="int" required="true"/>
+        <field name="resource_type" type="hidden" required="true"/>
+    </fieldset>
+
+    <field name="user_id" type="hidden" filter="int" required="true" validate="logged"/>
+    <field name="resource_title" type="hidden"/>
+    <field name="resource_excerpt" type="hidden"/>
+</form>

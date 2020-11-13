@@ -1,0 +1,42 @@
+div.modal.likes-modal div.modal-body {
+  box-sizing: border-box;
+  padding: 20px;
+  width: 100%;
+  min-height: 100px;
+  overflow: auto;
+}
+div.modal.likes-modal div.modal-body div.list {
+  display: grid;
+  grid-gap: 15px;
+}
+div.modal.likes-modal div.modal-body div.list div.item {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  grid-gap: 10px;
+}
+div.modal.likes-modal div.modal-body div.list div.item + div.item {
+  border-top: 1px solid #f6f6f6;
+  padding-top: 15px;
+}
+div.modal.likes-modal div.modal-body div.user img {
+  width: 40px;
+}
+div.modal.likes-modal div.modal-body table td {
+  border-top: none;
+  border-bottom: 1px solid #f6f6f6;
+  line-height: normal;
+}
+div.modal.likes-modal div.modal-body table td:first-child {
+  border: none;
+  width: 40px;
+  padding-right: 16px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+div.modal.likes-modal div.modal-body table td:nth-child(2) {
+  padding-left: 0;
+  padding-top: 10px;
+}
+div.modal.likes-modal div.modal-footer .btn-primary {
+  min-width: 150px;
+}

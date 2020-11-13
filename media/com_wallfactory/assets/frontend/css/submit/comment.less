@@ -1,0 +1,64 @@
+div.submit-comment {
+    margin-bottom: 20px;
+
+    div.user {
+        float: left;
+
+        img {
+            width: 30px;
+        }
+    }
+
+    div.contents {
+        margin-left: 40px;
+    }
+
+    textarea {
+        font-family: 'Roboto', sans-serif;
+        border: 1px solid #dddddd;
+        box-shadow: none;
+        border-radius: 0;
+        resize: none;
+        width: 100%;
+        max-height: 200px;
+        height: auto;
+        margin: 0;
+        box-sizing: border-box;
+        padding: 5px 8px;
+        max-width: none;
+
+        &:focus:invalid:focus {
+            border-color: #dddddd;
+            box-shadow: none;
+            color: inherit;
+        }
+    }
+
+    input[type="text"],
+    input[type="email"] {
+        font-family: 'Roboto', sans-serif;
+        border: 1px solid #dddddd;
+        box-shadow: none;
+        border-radius: 0;
+        width: 50%;
+        min-width: 200px;
+        height: auto;
+        margin: 0;
+        box-sizing: border-box;
+        padding: 5px 8px;
+
+        &:focus:invalid:focus {
+            border-color: #dddddd;
+            box-shadow: none;
+            color: inherit;
+        }
+    }
+
+    form {
+        margin: 0;
+    }
+
+    div.comment-actions {
+        margin-top: 7px;
+    }
+}

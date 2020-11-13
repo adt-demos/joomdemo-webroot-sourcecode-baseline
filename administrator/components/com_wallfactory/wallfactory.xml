@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.5" method="upgrade">
+  <name>com_wallfactory</name>
+  <description>com_wallfactory_desc</description>
+  <version>4.1.8</version>
+  <languages folder="languages/frontend">
+    <language tag="en-GB">en-GB.com_wallfactory.ini</language>
+  </languages>
+  <install>
+    <sql>
+      <file charset="utf8" driver="mysql">sqls/install.mysql.utf8.sql</file>
+    </sql>
+  </install>
+  <uninstall>
+    <sql>
+      <file charset="utf8" driver="mysql">sqls/uninstall.mysql.utf8.sql</file>
+    </sql>
+  </uninstall>
+  <update>
+    <schemas>
+      <schemapath type="mysql">sqls/updates/mysql</schemapath>
+    </schemas>
+  </update>
+  <scriptfile>script.php</scriptfile>
+  <media destination="com_wallfactory" folder="media">
+    <folder>assets</folder>
+    <folder>bookmarks</folder>
+    <folder>storage</folder>
+    <filename>index.html</filename>
+  </media>
+  <files folder="frontend">
+    <folder>layouts</folder>
+    <folder>models</folder>
+    <folder>src</folder>
+    <folder>vendor</folder>
+    <folder>views</folder>
+    <filename>controller.php</filename>
+    <filename>cronjob.php</filename>
+    <filename>loader.php</filename>
+    <filename>router.php</filename>
+    <filename>wallfactory.php</filename>
+    <filename>index.html</filename>
+  </files>
+  <administration>
+    <menu>com_wallfactory</menu>
+    <submenu>
+      <menu view="dashboard">com_wallfactory_submenu_dashboard</menu>
+      <menu view="users">com_wallfactory_submenu_users</menu>
+      <menu view="posts">com_wallfactory_submenu_posts</menu>
+      <menu view="comments">com_wallfactory_submenu_comments</menu>
+      <menu view="reports">com_wallfactory_submenu_reports</menu>
+      <menu view="emoticons">com_wallfactory_submenu_emoticons</menu>
+      <menu view="bookmarks">com_wallfactory_submenu_bookmarks</menu>
+      <menu view="notifications">com_wallfactory_submenu_notifications</menu>
+      <menu view="configuration">com_wallfactory_submenu_configuration</menu>
+      <menu view="about">com_wallfactory_submenu_about</menu>
+    </submenu>
+    <languages folder="languages/backend">
+      <language tag="en-GB">en-GB.com_wallfactory.sys.ini</language>
+      <language tag="en-GB">en-GB.com_wallfactory.ini</language>
+    </languages>
+    <files folder="backend">
+      <folder>controllers</folder>
+      <folder>helpers</folder>
+      <folder>models</folder>
+      <folder>sqls</folder>
+      <folder>tables</folder>
+      <folder>views</folder>
+      <filename>controller.php</filename>
+      <filename>wallfactory.php</filename>
+      <filename>index.html</filename>
+    </files>
+  </administration>
+  <author>thePHPfactory</author>
+  <copyright>SKEPSIS Consult SRL</copyright>
+  <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+  <authorEmail>contact@thephpfactory.com</authorEmail>
+  <authorUrl>http://www.thephpfactory.com</authorUrl>
+  <url>http://www.thephpfactory.com</url>
+  <creationDate>December 2010</creationDate>
+  <updateservers>
+    <server type="collection" name="The PHP Factory Extensions Update">http://thephpfactory.com/versions/update-c.xml</server>
+  </updateservers>
+</extension>

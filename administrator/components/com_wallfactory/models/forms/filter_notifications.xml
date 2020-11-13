@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<form>
+    <fields name="filter">
+        <field name="search" type="text" hint="JSEARCH_FILTER"/>
+
+        <field name="type_status" type="list" onchange="this.form.submit();">
+            <option value="">COM_WALLFACTORY_FIELD_NOTIFICATION_TYPE_STATUS_SELECT</option>
+            <option value="1">JENABLED</option>
+            <option value="0">JDISABLED</option>
+        </field>
+
+        <field name="published" type="list" onchange="this.form.submit();">
+            <option value="">JOPTION_SELECT_PUBLISHED</option>
+            <option value="1">JPUBLISHED</option>
+            <option value="0">JUNPUBLISHED</option>
+        </field>
+
+        <field name="type" type="notification" onchange="this.form.submit();">
+            <option value="">COM_WALLFACTORY_FIELD_NOTIFICATION_TYPE_SELECT_TYPE</option>
+        </field>
+
+        <field name="language" type="contentlanguage" onchange="this.form.submit();"
+               label="JOPTION_FILTER_LANGUAGE" description="JOPTION_FILTER_LANGUAGE_DESC">
+            <option value="">JOPTION_SELECT_LANGUAGE</option>
+            <option value="*">JALL</option>
+        </field>
+    </fields>
+
+    <fields name="list">
+        <field name="fullordering" type="list" onchange="this.form.submit();">
+            <option value="">JGLOBAL_SORT_BY</option>
+        </field>
+
+        <field name="limit" type="limitbox" class="input-mini" onchange="this.form.submit();"/>
+    </fields>
+</form>

@@ -1,0 +1,120 @@
+div.posts {
+    div.post {
+        + div.post {
+            margin-top: 25px;
+            padding-top: 25px;
+            border-top: 1px solid #eeeeee;
+        }
+
+        div.post-media {
+            margin: 15px 0;
+        }
+
+        div.post-media-item {
+            + div.post-media-item {
+                margin-top: 10px;
+            }
+
+            padding: 10px;
+            background-color: #f6f6f6;
+        }
+    }
+
+    div.post-user {
+        float: left;
+
+        img {
+            width: 42px;
+        }
+    }
+
+    div.post-contents {
+        margin-left: 60px;
+
+        span.fa-caret-right {
+            margin: 0 3px 0 5px;
+        }
+
+        div.post-text {
+            margin: 10px 0 15px;
+        }
+
+        p {
+            margin: 0;
+            padding: 0;
+
+            + p {
+                margin-top: 7px;
+            }
+        }
+
+        img.emoticon {
+            margin: 2px;
+        }
+    }
+
+    div.btn-group {
+        a.dropdown-toggle {
+            background: none;
+            border: none;
+            box-shadow: none;
+            border-radius: 0;
+            padding: 2px 8px;
+            color: #dddddd;
+
+            &:hover {
+                color: #666666;
+            }
+        }
+
+        ul {
+            border-radius: 0;
+            margin-top: 0;
+            margin-right: -1px;
+            padding: 5px 0;
+
+            li.divider {
+                margin: 5px 0;
+            }
+
+            a {
+                font-size: 12px;
+
+                &:hover {
+                    background-color: #999999;
+                    background-image: none;
+                }
+            }
+        }
+
+        &.open {
+            a.dropdown-toggle {
+                background-color: #999999;
+                color: #ffffff;
+            }
+        }
+    }
+
+    div.post-actions {
+        overflow: hidden;
+
+        a {
+            float: left;
+            color: #999999;
+
+            + a {
+                margin-left: 10px;
+            }
+        }
+
+        span.badge {
+            float: left;
+            padding: 3px 10px;
+            line-height: normal;
+        }
+    }
+
+    div.bookmarks {
+        margin-top: 10px;
+    }
+}

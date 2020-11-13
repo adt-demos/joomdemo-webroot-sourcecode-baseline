@@ -1,0 +1,33 @@
+div.modal.report-modal {
+  left: 0;
+  margin: 0 auto;
+  right: 0;
+  width: 500px;
+}
+div.modal.report-modal form {
+  margin: 0;
+  padding: 0;
+}
+div.modal.report-modal div.modal-body {
+  box-sizing: border-box;
+  padding: 9px 15px;
+  width: 100%;
+  min-height: 100px;
+}
+div.modal.report-modal div.modal-body textarea {
+  font-family: 'Roboto', sans-serif;
+  border: 1px solid #dddddd;
+  box-shadow: none;
+  border-radius: 0;
+  resize: none;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 12px;
+  padding: 6px 8px;
+  max-height: 350px;
+}
+div.modal.report-modal div.modal-footer .btn-primary {
+  min-width: 150px;
+}

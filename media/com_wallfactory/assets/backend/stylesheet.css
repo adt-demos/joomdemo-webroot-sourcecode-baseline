@@ -1,0 +1,21 @@
+span.fa.fa-filter {
+  visibility: hidden;
+}
+tr:hover span.fa.fa-filter {
+  visibility: visible;
+}
+div.section + div.section {
+  margin-top: 30px;
+}
+div.view-notifications span.label {
+  font-size: 10px;
+  padding: 1px 3px;
+  text-shadow: none;
+  font-weight: normal;
+}
+div.control-group + h2 {
+  margin-top: 30px;
+}
+form input[type="checkbox"] {
+  margin-top: 1px;
+}

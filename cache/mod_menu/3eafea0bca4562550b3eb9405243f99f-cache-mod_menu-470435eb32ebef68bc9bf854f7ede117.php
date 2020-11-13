@@ -1,0 +1,3 @@
+<?php die("Access Denied"); ?>#x#a:2:{s:6:"result";s:501:"<div class="well "><h3 class="page-header">Wallfactory</h3><ul class="nav menu mod-list">
+<li class="item-118"><a href="/newsfeed.html" >Newsfeed</a></li><li class="item-117"><a href="/post-all.html" >All posts</a></li><li class="item-116"><a href="/profile-show.html" >Profile</a></li><li class="item-115"><a href="/subscriber.html" >Subscribers</a></li><li class="item-114"><a href="/subscription.html" >Subscriptions</a></li><li class="item-113"><a href="/wall-show.html" >Wall</a></li></ul>
+</div>";s:6:"output";a:3:{s:4:"body";s:0:"";s:4:"head";a:0:{}s:13:"mime_encoding";s:9:"text/html";}}

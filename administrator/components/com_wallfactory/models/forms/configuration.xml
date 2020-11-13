@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<form>
+    <!-- General -->
+    <fieldset name="post" tab="general" side="left">
+        <fields name="post">
+            <fields name="guest">
+
+                <field name="access" type="list" default="none">
+                    <option value="none">COM_WALLFACTORY_CONFIGURATION_FORM_FIELD_POST_GUEST_ACCESS_OPTION_NONE</option>
+                    <option value="read">COM_WALLFACTORY_CONFIGURATION_FORM_FIELD_POST_GUEST_ACCESS_OPTION_READ</option>
+                    <option value="write">COM_WALLFACTORY_CONFIGURATION_FORM_FIELD_POST_GUEST_ACCESS_OPTION_WRITE
+                    </option>
+                </field>
+
+                <field name="captcha" type="radio" class="switcher btn-group btn-group-yesno" filter="integer"
+                       default="0" showon="access:write">
+                    <option value="0">JDISABLED</option>
+                    <option value="1">JENABLED</option>
+                </field>
+            </fields>
+
+            <field type="number" name="limit" default="10" filter="integer"/>
+
+            <fields name="throttle">
+                <field name="enabled" type="radio" class="switcher btn-group btn-group-yesno" filter="integer" default="0">
+                    <option value="0">JDISABLED</option>
+                    <option value="1">JENABLED</option>
+                </field>
+
+                <field name="posts_per_minute" type="number" default="1" filter="integer" showon="post.throttle.enabled:1"/>
+            </fields>
+        </fields>
+    </fieldset>
+
+    <fieldset name="comment" tab="general" side="right">
+        <fields name="comment">
+            <field name="enabled" type="radio" class="switcher btn-group btn-group-yesno" filter="integer" default="1">
+                <option value="0">JDISABLED</option>
+                <option value="1">JENABLED</option>
+            </field>
+
+            <field name="guest" type="radio" class="switcher btn-group btn-group-yesno" filter="integer" default="0"
+                   showon="enabled:1">
+                <option value="0">JDISABLED</option>
+                <option value="1">JENABLED</option>
+            </field>
+
+            <field name="captcha" type="radio" class="switcher btn-group btn-group-yesno" filter="integer" default="0"
+                   showon="enabled:1[AND]guest:1">
+                <option value="0">JDISABLED</option>
+                <option value="1">JENABLED</option>
+            </field>
+
+            <field name="limit" type="number" filter="integer" default="4" showon="enabled:1"/>
+            <field name="load" type="number" filter="integer" default="10" showon="enabled:1"/>
+        </fields>
+    </fieldset>
+
+    <fieldset name="like" tab="general" side="left">
+        <fields name="like">
+            <field name="enabled" type="radio" class="switcher btn-group btn-group-yesno" filter="integer" default="1">
+                <option value="0">JDISABLED</option>
+                <option value="1">JENABLED</option>
+            </field>
+        </fields>
+    </fieldset>
+
+    <fieldset name="bookmark" tab="general" side="left">
+        <fields name="bookmark">
+            <field name="enabled" type="radio" class="switcher btn-group btn-group-yesno" filter="integer" default="1">
+                <option value="0">JDISABLED</option>
+                <option value="1">JENABLED</option>
+            </field>
+        </fields>
+    </fieldset>
+
+    <fieldset name="subscription" tab="general" side="left">
+        <fields name="subscription">
+            <field name="enabled" type="radio" class="switcher btn-group btn-group-yesno" filter="integer" default="1">
+                <option value="0">JDISABLED</option>
+                <option value="1">JENABLED</option>
+            </field>
+        </fields>
+    </fieldset>
+
+    <!-- Posting -->
+    <fieldset name="posting_emoticons" tab="posting" side="left">
+        <fields name="posting">
+            <fields name="emoticons">
+                <field name="enabled" type="radio" class="switcher btn-group btn-group-yesno" filter="integer"
+                       default="1">
+                    <option value="0">JDISABLED</option>
+                    <option value="1">JENABLED</option>
+                </field>
+            </fields>
+        </fields>
+    </fieldset>
+
+    <fieldset name="link" tab="posting" side="left">
+        <fields name="posting">
+            <fields name="link">
+                <field name="enabled" type="radio" class="switcher btn-group btn-group-yesno" filter="integer"
+                       default="1">
+                    <option value="0">JDISABLED</option>
+                    <option value="1">JENABLED</option>
+                </field>
+
+                <field name="limit" type="number" filter="integer" default="0" showon="enabled:1"/>
+            </fields>
+        </fields>
+    </fieldset>
+
+    <fieldset name="audio" tab="posting" side="left">
+        <fields name="posting">
+            <fields name="audio">
+                <field name="enabled" type="radio" class="switcher btn-group btn-group-yesno" filter="integer"
+                       default="1">
+                    <option value="0">JDISABLED</option>
+                    <option value="1">JENABLED</option>
+                </field>
+
+                <field name="limit" type="number" filter="integer" default="0" showon="enabled:1"/>
+            </fields>
+        </fields>
+    </fieldset>
+
+    <fieldset name="file" tab="posting" side="left">
+        <fields name="posting">
+            <fields name="file">
+                <field name="enabled" type="radio" class="switcher btn-group btn-group-yesno" filter="integer"
+                       default="1">
+                    <option value="0">JDISABLED</option>
+                    <option value="1">JENABLED</option>
+                </field>
+
+                <field name="extensions" type="text" showon="enabled:1"
+                       hint="COM_WALLFACTORY_CONFIGURATION_FORM_FIELD_POSTING_FILE_EXTENSIONS_HINT"/>
+
+                <field name="limit" type="number" filter="integer" default="0" showon="enabled:1"/>
+            </fields>
+        </fields>
+    </fieldset>
+
+    <fieldset name="video" tab="posting" side="right">
+        <fields name="posting">
+            <fields name="video">
+                <field name="enabled" type="radio" class="switcher btn-group btn-group-yesno" filter="integer"
+                       default="1">
+                    <option value="0">JDISABLED</option>
+                    <option value="1">JENABLED</option>
+                </field>
+
+                <field name="lazy_load" type="list" default="view" showon="enabled:1">
+                    <option value="0">JDISABLED</option>
+                    <option value="view">COM_WALLFACTORY_CONFIGURATION_FORM_FIELD_POSTING_VIDEO_LAZY_LOAD_OPTION_VIEW
+                    </option>
+                    <option value="click">
+                        COM_WALLFACTORY_CONFIGURATION_FORM_FIELD_POSTING_VIDEO_LAZY_LOAD_OPTION_CLICK
+                    </option>
+                </field>
+
+                <field name="limit" type="number" filter="integer" default="0" showon="enabled:1"/>
+                <field name="width" type="number" filter="integer" default="620" showon="enabled:1"/>
+                <field name="height" type="number" filter="integer" default="360" showon="enabled:1"/>
+            </fields>
+        </fields>
+    </fieldset>
+
+    <fieldset name="photo" tab="posting" side="right">
+        <fields name="posting">
+            <fields name="photo">
+                <field name="enabled" type="radio" class="switcher btn-group btn-group-yesno" filter="integer"
+                       default="1">
+                    <option value="0">JDISABLED</option>
+                    <option value="1">JENABLED</option>
+                </field>
+
+                <field name="lazyload" type="radio" class="switcher btn-group btn-group-yesno" filter="integer"
+                       default="1" showon="enabled:1">
+                    <option value="0">JDISABLED</option>
+                    <option value="1">JENABLED</option>
+                </field>
+                <field name="limit" type="number" filter="integer" default="0" showon="enabled:1"/>
+                <field name="height" type="number" filter="integer" default="600" showon="enabled:1"/>
+                <field name="width" type="number" filter="integer" default="800" showon="enabled:1"/>
+            </fields>
+        </fields>
+    </fieldset>
+
+    <!-- Sections -->
+    <fieldset name="newsfeed" tab="sections" side="left">
+        <fields name="newsfeed">
+            <field name="enabled" type="radio" class="switcher btn-group btn-group-yesno" filter="integer" default="1">
+                <option value="0">JDISABLED</option>
+                <option value="1">JENABLED</option>
+            </field>
+
+            <field name="limit" type="number" filter="integer" default="10" showon="enabled:1"/>
+        </fields>
+    </fieldset>
+
+    <fieldset name="profile" tab="sections" side="right">
+        <fields name="profile">
+            <field name="self_removal" type="radio" class="switcher btn-group btn-group-yesno" filter="integer"
+                   default="0">
+                <option value="0">JDISABLED</option>
+                <option value="1">JENABLED</option>
+            </field>
+
+            <field name="auto_fill" type="radio" class="switcher btn-group btn-group-yesno" filter="integer"
+                   default="0">
+                <option value="0">JDISABLED</option>
+                <option value="1">JENABLED</option>
+            </field>
+
+            <field name="auto_fill_name" type="list" default="name" showon="auto_fill:1">
+                <option value="name">COM_WALLFACTORY_CONFIGURATION_FORM_FIELD_PROFILE_AUTO_FILL_NAME_OPTION_NAME
+                </option>
+                <option value="username">
+                    COM_WALLFACTORY_CONFIGURATION_FORM_FIELD_PROFILE_AUTO_FILL_NAME_OPTION_USERNAME
+                </option>
+            </field>
+
+            <field name="avatar_source" type="UserAvatarSource" default="user_chosen">
+                <option value="user_chosen">Allow user to chose avatar source</option>
+            </field>
+        </fields>
+    </fieldset>
+
+    <!-- Moderation -->
+    <fieldset name="post_filter" tab="moderation" side="left">
+        <fields name="moderation">
+            <fields name="banned">
+                <field name="words" type="textarea" rows="10"/>
+            </fields>
+        </fields>
+    </fieldset>
+
+    <!-- Integrations -->
+    <fieldset name="gravatar" tab="integrations" side="left">
+        <fields name="integrations">
+            <fields name="gravatar">
+                <field name="profile" type="radio" class="switcher btn-group btn-group-yesno" filter="integer"
+                       default="0">
+                    <option value="0">JDISABLED</option>
+                    <option value="1">JENABLED</option>
+                </field>
+
+                <field name="guest" type="radio" class="switcher btn-group btn-group-yesno" filter="integer"
+                       default="0">
+                    <option value="0">JDISABLED</option>
+                    <option value="1">JENABLED</option>
+                </field>
+            </fields>
+        </fields>
+    </fieldset>
+
+    <!-- Notifications -->
+    <fieldset name="notifications" tab="miscellaneous" side="left">
+        <fields name="notifications"/>
+    </fieldset>
+
+    <!-- Cron Job -->
+    <fieldset name="cronjob" tab="miscellaneous" side="right">
+        <fields name="cronjob">
+            <field name="password" type="text"/>
+
+            <field name="url" type="CronJobUrl"/>
+        </fields>
+    </fieldset>
+
+    <!-- Debug -->
+    <fieldset name="debug" tab="miscellaneous" side="right">
+        <fields name="debug">
+            <field name="enabled" type="radio" class="switcher btn-group btn-group-yesno" filter="integer" default="0">
+                <option value="0">JDISABLED</option>
+                <option value="1">JENABLED</option>
+            </field>
+        </fields>
+    </fieldset>
+
+    <!-- Backend -->
+    <fieldset name="backend" tab="miscellaneous" side="right">
+        <fields name="backend">
+            <field name="hide_disabled_menus" type="radio" class="switcher btn-group btn-group-yesno" filter="integer"
+                   default="0">
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+            </field>
+        </fields>
+    </fieldset>
+</form>
